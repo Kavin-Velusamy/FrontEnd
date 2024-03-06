@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <title>Keepnotes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script defer src="script.js"></script>
+
+    <div class="navbar">
+        <h1>BookMark</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>Robert</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quidem similique, quaerat praesentium nam libero iure nemo. Facilis, animi aliquam? Iste quis voluptatem sit facere provident! Impedit vero dignissimos reiciendis.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="Book-title-input">
+            <input type="text" placeholder="Book Author"  id="book-author-input">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book">ADD</button> 
+            <button id="cancel-popup">Cancel</button>
+
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+    
+</body>
+</html>

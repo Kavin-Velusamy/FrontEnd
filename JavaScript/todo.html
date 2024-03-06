@@ -1,0 +1,73 @@
+<!-- innerHTML will print the <h1>Hello</h1>, go and see in console -->
+
+<!-- <div id="one">
+    <h1>Hello</h1>
+</div>
+
+<script>
+    var div=document.getElementById("one")
+    console.log(div.innerHTML)
+</script> -->
+
+
+
+<!-- <div id="one">
+    <h1>Hello</h1>
+</div>
+
+<script>
+    var div=document.getElementById("one")
+    //div.innerHTML="<h1>Bye</h1>"
+   div.textContent="<h1>Bye</h1>"
+</script> -->
+
+
+
+<!-- if we use the class -->
+
+
+<!-- <div class="one">
+    <h1>Hello</h1>
+</div>
+
+<script>
+    var div=document.querySelector(".one")
+    div.innerHTML="<h1>Bye</h1>"
+</script> -->
+
+
+
+<!-- see in console -->
+
+<!-- <h1 class="ok">One</h1>
+<h1 class="ok">Two</h1>
+<h1 class="ok">Three</h1>
+
+<script>
+    var div=document.querySelectorAll(".ok")
+    for(count=0;count<div.length;count=count+1)
+    {
+        console.log(div[count].textContent)
+    }
+</script> -->
+
+
+<!-- <input id="input">
+<button onclick="add()">Add</button>
+<ul id="list-container">
+    <li>
+        Hello <button>Delete</button>
+    </li>
+</ul>
+
+<script>
+    var ul=document.getElementById("list-container")
+    var input=document.getElementById("input")
+    function add()
+    {
+        var listitem=document.createElement("li")
+        listitem.textContent="Hello"
+        //listitem.textContent=input.value
+        ul.append(listitem)
+    }
+</script> -->
