@@ -32,9 +32,9 @@
 // console.log(a)
 
 // if it is permanent then we can use constant as const
-// const a=10
+// const b=10
 // a=20
-// console.log(a)
+// console.log(b)
 
 // const weekdays=7
 // a=10
@@ -193,3 +193,15 @@
 
 // var a=Math.random()
 // console.log(Math.floor(a*10))
+
+// var a=Math.random()
+// console.log(Math.floor(a*10)+1)
+
+// var a=10
+// var b=20
+// function add(){
+//     console.log(a+b)
+// }
+// add()
+
+
