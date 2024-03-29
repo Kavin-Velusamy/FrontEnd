@@ -136,6 +136,84 @@ body{
     border: none;
 }
 
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+
+.news button{
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+
+}
+
+.footer{
+    margin-top: 20px;
+    color: white;
+    padding: 40px;
+    background-color: #1d232c;
+}
+
+.product-section{
+    margin-top: 20px;
+}
+
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input{
+    border:none;
+    background-color: transparent;
+    width: 100%;   
+}
+
+.product-search input:focus{
+    outline: none;
+}
+
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.products-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.products-box img{
+    border-radius: 10px;   
+}
+
+
+
+
+
+
+
 
 
 /* media query */
