@@ -106,6 +106,8 @@
 // }
 // favourite()
 
+
+
 // function area(a,b){
 //     var a=l*b
 //     console.log(a)
@@ -135,7 +137,7 @@
 
 
 // console.log(false&&true&&true)     // 1 false =full false
-// console.log(false||false||true)     // 1 true==ture
+// console.log(false||false||true)     // 1 true==true
 
 
 // console.log(!true)

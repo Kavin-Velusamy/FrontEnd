@@ -21,12 +21,11 @@ body{
 }
 .navbar-links a{
     text-decoration: none;
-    color: #1d232c;
+    color: #0e6cfb;
 }
 
 .navbar-links a:hover{
-    text-decoration: underline;
-    color:#1d232c;
+    color:#f0210a;
 }
 
 /* minimize the screen */
@@ -38,7 +37,7 @@ body{
 /* side navbar  */
 
 .side-navbar{
-    background-color: #1d232c;
+    background-color: #7ec612;
     width: 50%;
     height: 100%;
     position: fixed;
