@@ -351,7 +351,7 @@ ul li a:hover{
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
-
+    
 .btn{
     width: 100px;
     height: 40px;
@@ -471,11 +471,9 @@ ul li a:hover{
     font-family: Arial;
 }
 
-.btnn{
-    width: 240px;
+.btnn{width: 240px;
     height: 40px;
-    background-color: #ff7200;
-    color: #ff7200;
+    background-color: aquamarine;
     border: none;
     margin-top: 30px;
     font-size: 18px;
@@ -485,7 +483,7 @@ ul li a:hover{
 }
 .btnn a:hover{
     background: #fff;
-    color: #ff7200;
+    color: #ff0015;
 }
 .btnn a{
     text-decoration: none;
