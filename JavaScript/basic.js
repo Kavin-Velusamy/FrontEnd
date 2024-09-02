@@ -4,7 +4,7 @@
 // var- it is declared in anywhere in the function like inside the function or outside where they are declared
 // If declared outside of a function, it becomes globally scoped.
 // if it inside it is locally scoped
-// 
+
 
 
 // let-it can be declared inside the function or block where they are declared
@@ -64,7 +64,7 @@
 
 
 // var fname="kavin"
-// var age=20
+// let age=20
 // var ismarried= true
 
 // if (ismarried==true){
@@ -83,9 +83,8 @@
 
 
 // var no=0
-// for (var i=0;i<=1000;i=i+1){
+// for (var i=0;i<=1000;i+=1){
 //     no=(no+i);
-    
 // }
 // console.log(no);
 
@@ -93,8 +92,8 @@
 // array
 // even no
 
-// const ages=[1,2]
-// for( var i=0;i<=ages.length;i=i+1){
+// const ages=[1,2,3,7,8]
+// for( var i=0;i<=ages.length;i+=1){
 //     if( ages[i]%2==0){
 //         console.log (ages[i]);
 //     }
@@ -117,8 +116,8 @@
 
 // const passname=["kavin","nivash","priya"];
 // const gender=["male","male","female"];
-// for( var i=0;i<=passname.length;i++){
-//     if( gender[i]=="male"){
+// for( let i=0;i<=passname.length;i++){
+//     if (gender[i]=="male"){
 //         console.log (passname[i]);
 //     }
 // }
@@ -200,10 +199,10 @@
 //     console.log(count)
 //     count--;
 
-//     if (count<0){
-//         clearInterval(countdown);
-//         console.log("count finished")
-//     }
+    // if (count<0){
+    //     clearInterval(countdown);
+    //     console.log("count finished")
+    // }
 // },1000);
 
 
@@ -347,11 +346,11 @@
 
 // tolower
 
-// function  toLower(str){
+// function  Lower(str){
 //     console.log("Original :",str);
 //     console.log("After replace :",str.toLowerCase());
 // }
-// toLower("Hello Kavin");
+// Lower("Hello Kavin");
 
 
 
@@ -425,19 +424,17 @@
 //     console.log("After push:", arr);
 //   }
 //   pushExample([1, 2, 3], 4);
-  
 // const initialarray=[1,2,3]
 // console.log (initialarray.push(4))
 
-  
-  // pop()
-//   function popExample(arr) {
-//     console.log("Original Array:", arr);
-  
-//     arr.pop();
-//     console.log("After pop:", arr);
-//   }
-//   popExample([1, 2, 3]);
+
+// pop()
+  // function popExample(arr) {
+  //   console.log("Original Array:", arr);
+  //   arr.pop();
+  //   console.log("After pop:", arr);
+  // }
+  // popExample([1, 2, 3]);
   
 
 
@@ -516,25 +513,25 @@
   //   console.log("Original Array:", arr);
   
   //   let newArr = arr.filter(function(item) {
-  //     return item > 3;
+  //     return item % 3==0
   //   });
   //   console.log("After filter:", newArr);
   // }
-  // filterExample([1, 2, 3, 4, 5]);
+  // filterExample([1, 2, 3, 4, 5 ,6]);
   
 
 
 
 //   // find()
-//   function findExample(arr) {
-//     console.log("Original Array:", arr);
+  // function findExample(arr) {
+  //   console.log("Original Array:", arr);
   
-//     let found = arr.find(function(item) {
-//       return item > 3;
-//     });
-//     console.log("After find:", found);
-//   }
-//   findExample([1, 2, 3, 4, 5]);
+  //   let found = arr.find(function(item) {
+  //     return item > 3;
+  //   });
+  //   console.log("After find:", found);
+  // }
+  // findExample([1, 2, 3, 4, 5]);
   
 
 
@@ -586,7 +583,7 @@
 // function dateMethods() {
 //     const currentDate = new Date();
 //     console.log("Current Date:", currentDate);
-  
+
 //     // Getting various components of the date
 //     console.log("Date:", currentDate.getDate());
 //     console.log("Month:", currentDate.getMonth() + 1); // Months are zero-indexed, so adding 1
@@ -713,13 +710,14 @@
 
 // loop
 
-// claculate the summ form 0 to 100
+// calculate the sum from 0 to 100
 
 // let a=0
-// for (let i=0;i<=50;i++){
-//   a=a+i
+// for (let i=0;i<50;i++){
+//   // a=a+i
+//   console.log(i);
 // }
-// console.log(a);
+// // console.log(a);
 
 
 
@@ -728,7 +726,7 @@
 // function findsum(n){
 //   let ans=0;
 //   for(let i=1;i<n;i++){
-//     ans=ans+i
+//     ans+=i
 //   }
 //   return ans;
 // }
@@ -740,17 +738,16 @@
 
 // callback function
 
-// function square(n){
-//   return n*n
-// }
-// function sumofsquare(a,b){
-//   const val1=square(a);
-//   const val2=square(b);
 
-//   return val1+val2;
+// function cube(n){
+//   return n*n*n
 // }
-// console.log(sumofsquare(1,2))
-
+// function sumofcube(a,b){
+//   const val1=cube(a)
+//   const val2=cube(b)
+//   return val1+val2
+// }
+// console.log(sumofcube(1,2))
 
 
 
@@ -768,7 +765,6 @@
 // function sumofcube(a,b){
 //   const val1=cube(a);
 //   const val2=cube(b);
-
 //   return val1+val2;
 // }
 // console.log(sumofsquare(1,2))
@@ -791,15 +787,15 @@
 
 //   return val1+val2;
 // }
-// let ans=sumOfSomething(1,2,cube)
+// let ans=sumOfSomething(1,2,square)
 // console.log(ans)
-// // console.log(sumofsomething(1,2,square))
+// console.log(sumofsomething(1,2,square))
 
 
 
 
 //  sync Anonymous function
-// together one after the other sequential like cooking ,only one thing is happening at hte time
+// together one after the other sequential like cooking ,only one thing is happening at the time
 // opposite to async -multiple thing happening
 
 
@@ -809,6 +805,7 @@
 //   let ans=0;
 //   for(let i=1;i<n;i++){
 //     ans +=i; 
+//     // console.log(i)
 //   }
 //   return ans;
 // }
@@ -844,22 +841,22 @@
 // function findSumTill100(){
 //   console.log(findsum(100))
 // }
-// //calling a Asynchronous function
+// // calling a Asynchronous function
 // setTimeout(findSumTill100,1000)
 // console.log("Hello World")
 
 
 
-// function asyncFunction() {
-//     console.log("Start");
-//     // Simulate an asynchronous operation
-//     setTimeout(() => {
-//         console.log("This runs after 2 seconds");
-//     }, 2000);
-//     console.log("End");
-// }  
-// asyncFunction();
-// console.log("This runs immediately after the function call");
+function asyncFunction() {
+    console.log("Start");
+    // Simulate an asynchronous operation
+    setTimeout(() => {
+        console.log("This runs after 2 seconds");
+    }, 2000);
+    console.log("End");
+}  
+asyncFunction();
+console.log("This runs immediately after the function call");
 
 
 
@@ -937,7 +934,7 @@
 //     resolve("Hi there")
 //   },1000)
 // });
-// return p;
+// return p;d
 // }
 // async function main() {
 //   //no callback ,no then syntax

@@ -1,6 +1,9 @@
-{
-    let b=20 
-    var a=10
-    console.log(b)
+tion square(n){
+  return n*n
 }
-console.log(a)
+function sumofsquare(a,b){
+  const val1=square(a);
+  const val2=square(b);
+  return val1+val2;
+}
+con
