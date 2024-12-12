@@ -23,7 +23,7 @@
 // const b=20
 // console.log(b)
 
-// 
+
 // var is function-scoped, meaning if you declare a variable with var 
 // inside a function, it will only be accessible within that function and also outside of function.
 
@@ -794,10 +794,8 @@
 
 
 
-//  sync Anonymous function
+//  sync synchronous function
 // together one after the other sequential like cooking ,only one thing is happening at the time
-// opposite to async -multiple thing happening
-
 
 // sync  synchronous function -wait for it to complete before u  can proceed to the next one
 
@@ -805,13 +803,13 @@
 //   let ans=0;
 //   for(let i=1;i<n;i++){
 //     ans +=i; 
-//     // console.log(i)
+//     console.log(i)
 //   }
 //   return ans;
 // }
-// // let ans=findsum(100)
-// // console.log(ans)
-// console.log(findsum(100))
+// let ans=findsum(100)
+// console.log(ans)
+// // console.log(findsum(100))
 
 
 
@@ -830,6 +828,7 @@
 
   // (Async) Asynchronous function
 // u can delegate the work to the other person
+// opposite to async -multiple thing happening
 
 // function findsum(n){
 //   let ans=0;
@@ -847,16 +846,16 @@
 
 
 
-function asyncFunction() {
-    console.log("Start");
-    // Simulate an asynchronous operation
-    setTimeout(() => {
-        console.log("This runs after 2 seconds");
-    }, 2000);
-    console.log("End");
-}  
-asyncFunction();
-console.log("This runs immediately after the function call");
+// function asyncFunction() {
+//     console.log("Start");
+//     // Simulate an asynchronous operation
+//     setTimeout(() => {
+//         console.log("This runs after 2 seconds");
+//     }, 2000);
+//     console.log("End");
+// }  
+// asyncFunction();
+// console.log("This runs immediately after the function call");
 
 
 
@@ -896,21 +895,24 @@ console.log("This runs immediately after the function call");
 
 // callback fn
 
-// function kiratsAsyncFunction(callback){
-//   callback("Hi there")
-// }
-// async function main() {
-//   kiratsAsyncFunction(function(value){
-//     console.log(value)
-//   }) 
-// }
-// main()
+function kiratsAsyncFunction(callback){
+  callback("Hi there")
+}
+async function main() {
+  kiratsAsyncFunction(function(value){
+    console.log(value)
+  }) 
+}
+main()
 
 
 
 
 
-// /Promise (then) 
+// /Promises (then) 
+// If we use promises there is no call backs
+
+
 // function kiratsAsyncFunction(callback){
 //   let p=new Promise(function(resolve){
 //     resolve("Hi there")
