@@ -7,6 +7,7 @@
 
 
 
+
 // let-it can be declared inside the function or block where they are declared
 // let and const is a temporal dead zone when value is not assigned if u try to access it will show error
 
